@@ -23,18 +23,21 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [https://github.com/ortiz-antonio/frontend-mentor/tree/main/challenges/recipe-page](https://github.com/ortiz-antonio/frontend-mentor/tree/main/challenges/recipe-page)
-- Live Site URL: [https://ortiz-antonio.github.io/frontend-mentor/challenges/recipe-page/index.html](https://ortiz-antonio.github.io/frontend-mentor/challenges/recipe-page/index.html)
+- Parent Project: [https://github.com/ortiz-antonio/frontend-mentor](https://github.com/ortiz-antonio/frontend-mentor)
+- Solution URL: [https://github.com/ortiz-antonio/recipe-page](https://github.com/ortiz-antonio/recipe-page)
+- Live Site URL: [https://ortiz-antonio.github.io/recipe-page](https://ortiz-antonio.github.io/recipe-page/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Variables
+- SCSS
+- Pug
 - Flexbox
 - Mobile-first workflow
-- [Normalize.css](https://necolas.github.io/normalize.css/) - CSS Library
+- Taskfile
+- Parcel
 
 ### What I learned
 
