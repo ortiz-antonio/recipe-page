@@ -1,0 +1,128 @@
+@import 'base';
+
+.separator {
+  border: 1px solid $color-stone-150;
+}
+
+.recipe-container {
+  // max-inline-size: pxToRem(375);
+  background-color: $color-rose-50;
+}
+
+.recipe {
+  padding-block: $space-500;
+  padding-inline: $space-400;
+  display: flex;
+  flex-direction: column;
+  gap: $space-400;
+}
+
+.preparation {
+  padding: $space-300;
+}
+
+.preparation__list--item,
+.ingredients__list--item,
+.instructions__list--item {
+  margin-block-end: $space-100;
+}
+
+.preparation__list--item::marker {
+  color: $color-rose-800;
+  @extend %font-body-bold;
+}
+
+.ingredients__list--item::marker {
+  color: $color-brown-800;
+  @extend %font-body-bold;
+}
+
+.instructions__list--item::marker {
+  color: $color-brown-800;
+  @extend %font-body-bold;
+}
+
+.header {
+  margin-block-start: 0;
+}
+
+.nutrition {
+  margin-block-end: 0;
+  &__table {
+    margin-block-start: $space-300;
+    border-collapse: collapse;
+    inline-size: 100%;
+    &--row {
+      border-bottom: 1px solid $color-stone-150;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border: 0;
+      }
+      &__cal {
+        padding: $space-150;
+      }
+      &__val {
+        color: $color-brown-800;
+        @extend %font-body-bold;
+      }
+    }
+  }
+}
+
+.header__title {
+  @extend %font-title-l;
+}
+
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+  @extend %font-title-m;
+}
+
+.preparation__title {
+  @extend %font-title-s;
+}
+
+@media screen and (min-width: pxToEm(450)) {
+  .art {
+    margin: $space-500;
+  }
+  .art__img {
+    border-radius: $space-300;
+  }
+  .recipe-container {
+    margin: $space-500;
+    border-radius: $space-500;
+    max-inline-size: pxToRem(736);
+  }
+  .recipe {
+    margin: $space-500;
+  }
+
+  .header__title {
+    font-size: pxToEm(40);
+  }
+}
+
+.footer {
+  margin-top: $space-500;
+}
+
+.attribution {
+  margin-inline: $space-300;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    &--fm,
+    &--ortiz {
+      color: $color-primary;
+    }
+  }
+}

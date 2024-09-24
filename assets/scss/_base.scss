@@ -1,0 +1,105 @@
+// Import math functions from Sass library (assuming you have it installed)
+@use 'sass:math';
+
+@font-face {
+  font-family: YoungSerif;
+  font-display: swap;
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+// Define variables
+
+$color-white: hsl(0, 0%, 100%);
+$color-stone-100: hsl(30, 54%, 90%);
+$color-stone-150: hsl(30, 18%, 87%);
+$color-stone-600: rgb(95, 87, 78);
+$color-stone-900: hsl(15, 4%, 18%);
+$color-brown-800: rgb(133, 70, 50);
+$color-rose-800: hsl(332, 51%, 32%);
+$color-rose-50: hsl(330, 100%, 98%);
+
+$color-primary: $color-rose-800;
+$color-secondary: $color-brown-800;
+
+$color-bg: $color-stone-150;
+
+$space-500: pxToRem(40);
+$space-400: pxToRem(32);
+$space-300: pxToRem(24);
+$space-200: pxToRem(16);
+$space-150: pxToRem(12);
+$space-100: pxToRem(8);
+
+$font-family: Outfit, sans-serif;
+$base-font-size: 16; //in px
+
+// Define functions for converting pixel values to em and rem units
+@function pxToEm($value) {
+  $emValue: math.div($value, $base-font-size) + em;
+  @return $emValue;
+}
+
+@function pxToRem($value) {
+  $remValue: math.div($value, $base-font-size) + rem;
+  @return $remValue;
+}
+
+// Define mixin for setting font properties
+@mixin font($size, $weight, $line-height, $letter-spacing) {
+  font-size: pxToEm($size);
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: pxToEm($letter-spacing);
+}
+
+// Define mixin for centering content flexbox
+@mixin center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+%font-title-l {
+  font-family: YoungSerif, sans-serif;
+  @include font(36, 400, 1, 0);
+  margin-block-end: $space-300;
+  color: $color-stone-900;
+}
+
+%font-body {
+  @include font(16, 400, 1.5, 0);
+}
+
+%font-body-bold {
+  @include font(16, 700, 1.5, 0);
+}
+
+%font-title-s {
+  @include font(20, 600, 1, 0);
+  margin-block-end: $space-200;
+  color: $color-rose-800;
+}
+
+%font-title-m {
+  font-family: YoungSerif, sans-serif;
+  @include font(28, 400, 1, 0);
+  color: $color-brown-800;
+  margin-block-end: $space-300;
+}
+
+%font-text3 {
+  font-family: YoungSerif, sans-serif;
+  @include font(14, 500, 1.5, 0);
+}
+
+%font-text3-bold {
+  @include font(14, 800, 1.5, 0);
+}

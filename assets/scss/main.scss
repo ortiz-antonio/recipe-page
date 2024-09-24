@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'base';
+@import 'layout';
+@import 'components';
+
+body {
+  font-family: $font-family;
+  @extend %font-body;
+  background-color: $color-bg;
+  color: $color-stone-600;
+}
