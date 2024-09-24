@@ -115,7 +115,7 @@ body {
   border: 1px solid #e4ded8;
 }
 .recipe-container {
-  background-color: #fff5fa;
+  background-color: #fff;
 }
 .recipe {
   flex-direction: column;
@@ -125,6 +125,8 @@ body {
   display: flex;
 }
 .preparation {
+  background-color: #fff5fa;
+  border-radius: 0.75rem;
   padding: 1.5rem;
 }
 .preparation__list--item,
@@ -203,6 +205,6 @@ body {
 }
 body {
   color: #5f574e;
-  background-color: #e4ded8;
+  background-color: #f3e6d8;
   font-family: Outfit, sans-serif;
 }
