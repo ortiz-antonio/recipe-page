@@ -6,7 +6,7 @@
 
 .recipe-container {
   // max-inline-size: pxToRem(375);
-  background-color: $color-rose-50;
+  background-color: $color-white;
 }
 
 .recipe {
@@ -19,6 +19,8 @@
 
 .preparation {
   padding: $space-300;
+  background-color: $color-rose-50;
+  border-radius: $space-150;
 }
 
 .preparation__list--item,
