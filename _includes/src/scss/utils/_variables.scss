@@ -1,0 +1,36 @@
+@use 'functions';
+
+$space-24: #{functions.px-to-rem(24px)};
+$space-16: #{functions.px-to-rem(16px)};
+$radius-m: 12px;
+$radius-s: 8px;
+$font-family: system-ui;
+$container-width: #{functions.px-to-rem(327px)};
+$container-padding: 24px;
+
+:root {
+  --container-width: #{$container-width};
+  --container-padding: #{$container-padding};
+  --font-family: #{$font-family};
+  --space-s: #{$space-16};
+  --space-m: #{$space-24};
+
+  // colors
+  --primary: black;
+  --accent: grey;
+
+  // --background-accent: #{$color-grey-700};
+  // --background: #{$color-grey-800};
+  --background-page: white;
+
+  // typography
+  --title-font-size: #{functions.px-to-rem(24px)};
+  --title-weight: 600;
+  --title-line-height: 1.5;
+  --title-letter-spacing: 0;
+  --body-font-size: #{functions.px-to-rem(14px)};
+  --body-weight: 400;
+  --body-line-height: 1.5;
+  --body-letter-spacing: 0;
+  --body-bold-weight: 700;
+}
