@@ -3,21 +3,24 @@
 @use '../utils/variables';
 
 @font-face {
-  font-family: Inter;
+  font-family: YoungSerif;
   font-display: swap;
-  src: url('fonts/Inter-VariableFont_slnt,wght.ttf');
+  src: url('fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: outfit;
+  font-display: swap;
+  src: url('fonts/outfit/Outfit-VariableFont_wght.ttf');
 }
 
 .container {
-  display: grid;
-  place-items: center;
-  min-height: 100svh;
   font-family: #{var(--font-family)};
-  background-color: #{theme.color('background-page')};
   color: #{theme.color('primary')};
-  padding: 2px;
+
+  @include typography.size('body');
 }
 
 .footer {
-  margin-block-start: #{var(--space-m)};
+  margin-block-start: #{var(--space-xl)};
 }

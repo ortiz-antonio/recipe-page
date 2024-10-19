@@ -1,36 +1,69 @@
 @use 'functions';
 
+$color-white: hsl(0deg 0% 100%);
+$color-stone-100: hsl(30deg 54% 90%);
+$color-stone-150: rgb(228 222 216);
+$color-stone-600: rgb(95 87 78);
+$color-stone-900: hsl(15deg 4% 18%);
+$color-brown-800: rgb(133 70 50);
+$color-rose-800: hsl(332deg 51% 32%);
+$color-rose-50: hsl(330deg 100% 98%);
+$space-40: #{functions.px-to-rem(40px)};
+$space-32: #{functions.px-to-rem(32px)};
 $space-24: #{functions.px-to-rem(24px)};
 $space-16: #{functions.px-to-rem(16px)};
+$space-12: #{functions.px-to-rem(12px)};
+$space-8: #{functions.px-to-rem(8px)};
+$font-family: outfit, sans-serif;
+$font-family-young: youngserif, sans-serif;
 $radius-m: 12px;
 $radius-s: 8px;
-$font-family: system-ui;
 $container-width: #{functions.px-to-rem(327px)};
+$container-desktop-width: #{functions.px-to-rem(736px)};
 $container-padding: 24px;
 
 :root {
   --container-width: #{$container-width};
   --container-padding: #{$container-padding};
+  --container-desktop-width: #{$container-desktop-width};
   --font-family: #{$font-family};
-  --space-s: #{$space-16};
-  --space-m: #{$space-24};
+  --space-xl: #{$space-40};
+  --space-lg: #{$space-32};
+  --space-md: #{$space-24};
+  --space-sm: #{$space-16};
+  --space-xs: #{$space-12};
 
   // colors
-  --primary: black;
-  --accent: grey;
+  --primary: #{$color-stone-600};
+  --accent: #{$color-rose-800};
+  --background-accent: #{$color-rose-50};
+  --background: #{$color-white};
+  --background-page: #{$color-stone-100};
+  --title: #{$color-stone-900};
+  --title-primary: #{$color-brown-800};
+  --title-accent: #{$color-rose-800};
 
-  // --background-accent: #{$color-grey-700};
-  // --background: #{$color-grey-800};
-  --background-page: white;
-
+  // @include font(14, 500, 1.5, 0);
+  // @include font(14, 800, 1.5, 0);
   // typography
-  --title-font-size: #{functions.px-to-rem(24px)};
-  --title-weight: 600;
-  --title-line-height: 1.5;
+  --title-font-family: #{$font-family-young};
+  --title-font-size: #{functions.px-to-rem(36px)};
+  --title-desktop-font-size: #{functions.px-to-rem(40px)};
+  --title-weight: 400;
+  --title-line-height: 1;
   --title-letter-spacing: 0;
-  --body-font-size: #{functions.px-to-rem(14px)};
+  --body-font-size: #{functions.px-to-rem(16px)};
   --body-weight: 400;
   --body-line-height: 1.5;
   --body-letter-spacing: 0;
   --body-bold-weight: 700;
+  --title-primary-family: #{$font-family-young};
+  --title-primary-size: #{functions.px-to-rem(28px)};
+  --title-primary-weight: 400;
+  --title-primary-line-height: 1;
+  --title-primary-letter-spacing: 0;
+  --title-accent-size: #{functions.px-to-rem(20px)};
+  --title-accent-weight: 600;
+  --title-accent-line-height: 1;
+  --title-accent-letter-spacing: 0;
 }
