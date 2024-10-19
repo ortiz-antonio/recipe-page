@@ -8,13 +8,13 @@
   --space-md: 1.5rem;
   --space-sm: 1rem;
   --space-xs: 0.75rem;
-  --primary: rgb(95 87 78);
+  --base: rgb(95 87 78);
   --accent: hsl(332deg 51% 32%);
   --background-accent: hsl(330deg 100% 98%);
   --background: hsl(0deg 0% 100%);
   --background-page: hsl(30deg 54% 90%);
+  --primary: rgb(133 70 50);
   --title: hsl(15deg 4% 18%);
-  --title-primary: rgb(133 70 50);
   --title-accent: hsl(332deg 51% 32%);
   --title-font-family: youngserif, sans-serif;
   --title-font-size: 2.25rem;
@@ -133,7 +133,7 @@ h6 {
 
 .container {
   font-family: var(--font-family);
-  color: var(--primary);
+  color: var(--base);
   font-size: var(--body-font-size);
   font-weight: var(--body-weight);
   line-height: var(--body-line-height);
@@ -183,7 +183,7 @@ h6 {
 
 .ingredients__list--item::marker,
 .instructions__list--item::marker {
-  color: var(--title-primary);
+  color: var(--primary);
   font-size: var(--body-font-size);
   font-weight: var(--body-bold-weight);
   line-height: var(--body-line-height);
@@ -222,7 +222,7 @@ h6 {
 }
 
 .nutrition__table--row--val {
-  color: var(--title-primary);
+  color: var(--primary);
   font-size: var(--body-font-size);
   font-weight: var(--body-bold-weight);
   line-height: var(--body-line-height);
@@ -247,7 +247,7 @@ h6 {
   line-height: var(--title-primary-line-height);
   letter-spacing: var(--title-primary-letter-spacing);
   font-family: var(--title-font-family);
-  color: var(--title-primary);
+  color: var(--primary);
   margin-block-end: var(--space-sm);
 }
 
@@ -287,7 +287,7 @@ h6 {
   }
 
   .recipe {
-    margin-inline: var(--space-xl);
+    padding-inline: var(--space-xl);
   }
 }
 
