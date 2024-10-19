@@ -41,7 +41,7 @@
 
 .ingredients__list--item::marker,
 .instructions__list--item::marker {
-  color: theme.color('title-primary');
+  color: theme.color('primary');
 
   @include typography.size('body-bold');
 }
@@ -80,7 +80,7 @@
 }
 
 .nutrition__table--row--val {
-  color: theme.color('title-primary');
+  color: theme.color('primary');
 
   @include typography.size('body-bold');
 }
@@ -97,7 +97,7 @@
 .nutrition__title {
   @include typography.size('title-primary');
 
-  color: theme.color('title-primary');
+  color: theme.color('primary');
   margin-block-end: var(--space-sm);
 }
 
@@ -134,10 +134,6 @@
   }
 
   .recipe {
-    margin-inline: var(--space-xl);
-  }
-
-  .header__title {
-    // font-size: pxtoem(40);
+    padding-inline: var(--space-xl);
   }
 }

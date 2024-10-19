@@ -34,17 +34,15 @@ $container-padding: 24px;
   --space-xs: #{$space-12};
 
   // colors
-  --primary: #{$color-stone-600};
+  --base: #{$color-stone-600};
   --accent: #{$color-rose-800};
   --background-accent: #{$color-rose-50};
   --background: #{$color-white};
   --background-page: #{$color-stone-100};
+  --primary: #{$color-brown-800};
   --title: #{$color-stone-900};
-  --title-primary: #{$color-brown-800};
   --title-accent: #{$color-rose-800};
 
-  // @include font(14, 500, 1.5, 0);
-  // @include font(14, 800, 1.5, 0);
   // typography
   --title-font-family: #{$font-family-young};
   --title-font-size: #{functions.px-to-rem(36px)};

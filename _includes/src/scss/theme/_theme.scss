@@ -2,6 +2,9 @@
 @use '../utils/variables';
 
 $theme-colors: (
+  'base': (
+    'light': #{var(--base)},
+  ),
   'primary': (
     'light': #{var(--primary)},
   ),
@@ -19,9 +22,6 @@ $theme-colors: (
   ),
   'title': (
     'light': #{var(--title)},
-  ),
-  'title-primary': (
-    'light': #{var(--title-primary)},
   ),
   'title-accent': (
     'light': #{var(--title-accent)},
