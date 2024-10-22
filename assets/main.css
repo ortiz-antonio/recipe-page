@@ -8,14 +8,14 @@
   --space-md: 1.5rem;
   --space-sm: 1rem;
   --space-xs: 0.75rem;
-  --base: rgb(95 87 78);
-  --accent: hsl(332deg 51% 32%);
-  --background-accent: hsl(330deg 100% 98%);
-  --background: hsl(0deg 0% 100%);
-  --background-page: hsl(30deg 54% 90%);
-  --primary: rgb(133 70 50);
-  --title: hsl(15deg 4% 18%);
-  --title-accent: hsl(332deg 51% 32%);
+  --base: rgb(95, 87, 78);
+  --accent: hsl(332, 51%, 32%);
+  --background-accent: hsl(330, 100%, 98%);
+  --background: hsl(0, 0%, 100%);
+  --background-page: hsl(30, 54%, 90%);
+  --primary: rgb(133, 70, 50);
+  --title: hsl(15, 4%, 18%);
+  --title-accent: hsl(332, 51%, 32%);
   --title-font-family: youngserif, sans-serif;
   --title-font-size: 2.25rem;
   --title-desktop-font-size: 2.5rem;
@@ -124,13 +124,11 @@ h6 {
   font-display: swap;
   src: url("fonts/young-serif/YoungSerif-Regular.ttf");
 }
-
 @font-face {
   font-family: outfit;
   font-display: swap;
   src: url("fonts/outfit/Outfit-VariableFont_wght.ttf");
 }
-
 .container {
   font-family: var(--font-family);
   color: var(--base);
@@ -145,7 +143,7 @@ h6 {
 }
 
 .separator {
-  border: 1px solid rgb(228 222 216);
+  border: 1px solid rgb(228, 222, 216);
 }
 
 .recipe-container {
@@ -211,7 +209,6 @@ h6 {
 .nutrition__table--row:first-child {
   padding-top: 0;
 }
-
 .nutrition__table--row:last-child {
   padding-bottom: 0;
   border: 0;
@@ -265,32 +262,26 @@ h6 {
   :root {
     --title-font-size: var(--title-desktop-font-size);
   }
-
   .container {
     display: grid;
     place-items: center;
     padding: 2px;
     background-color: var(--background-page);
   }
-
   .art {
     padding: var(--space-xl) var(--space-xl) 0 var(--space-xl);
   }
-
   .art__img {
     border-radius: var(--space-md);
   }
-
   .recipe-container {
     border-radius: var(--space-xl);
     max-inline-size: var(--container-desktop-width);
   }
-
   .recipe {
     padding-inline: var(--space-xl);
   }
 }
-
 .attribution {
   text-align: center;
 }
@@ -304,7 +295,6 @@ h6 {
 .attribution__content--ortiz {
   color: var(--primary);
 }
-
 .attribution__content--fm:focus-visible,
 .attribution__content--ortiz:focus-visible {
   text-decoration: none;
