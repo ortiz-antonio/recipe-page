@@ -122,12 +122,12 @@ h6 {
 @font-face {
   font-family: YoungSerif;
   font-display: swap;
-  src: url("fonts/young-serif/YoungSerif-Regular.ttf");
+  src: url('fonts/young-serif/YoungSerif-Regular.ttf');
 }
 @font-face {
   font-family: outfit;
   font-display: swap;
-  src: url("fonts/outfit/Outfit-VariableFont_wght.ttf");
+  src: url('fonts/outfit/Outfit-VariableFont_wght.ttf');
 }
 .container {
   font-family: var(--font-family);
